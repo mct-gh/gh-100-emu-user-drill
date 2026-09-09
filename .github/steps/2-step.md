@@ -1,36 +1,35 @@
-## Step 2: (replace-me: STEP-NAME)
+## Step 2: 막히는 것을 겪는다
 
-(replace-me: OPTIONAL Brief story or scenario to introduce the step)
+EMU 의 제약은 문서로 읽으면 잊습니다. 직접 막혀 보면 안 잊습니다.
 
-### 📖 Theory: (replace-me: Theory title)
+### 📖 Theory: 왜 public 을 막는가
 
-<!-- GitHub-styled notifications can be used outside of ordered lists. Available options are: NOTE, IMPORTANT, WARNING, TIP, CAUTION -->
-<!--
-> [!NOTE]
-> (Important note or additional information relevant to this section)
- -->
+EMU 는 회사 코드가 회사 밖으로 나가지 않게 만든 모델입니다. 그래서 세 가지가 막힙니다.
 
-(replace-me: Optional theory or background information relevant to this step)
+1. **public 리포 생성** — 관리형 사용자는 public 리포를 만들 수 없습니다.
+2. **엔터프라이즈 밖 기여** — 다른 조직의 이슈나 PR 에 참여할 수 없습니다.
+3. **개인 계정과의 혼용** — 이 계정으로는 개인 프로젝트를 할 수 없습니다. 개인 계정을 따로 씁니다.
 
-(replace-me: OPTIONAL Reference images from the `.github/images/` directory to support any part of the content)
+> [!TIP]
+> 시험에서는 이 제약이 **엔터프라이즈 타입을 고르는 판단 근거**로 나옵니다.
+> 오픈소스에 기여해야 하는 조직은 EMU 를 고르면 안 됩니다. personal account 엔터프라이즈를 씁니다.
 
-<img width="200" alt="descriptive alt text" src="../images/inflatocat.png" />
+### ⌨️ Activity: emu-limits.md 를 만든다
 
+1. 새 리포를 만들려고 시도합니다. visibility 에서 **Public** 을 고르려고 해 보세요.
+2. 무엇이 보이는지 관찰합니다. 선택지가 없는지, 경고가 뜨는지, 만들기를 눌렀을 때 거절되는지.
+3. 다른 조직(예: 아무 오픈소스 리포)에 이슈를 열려고 시도해 봅니다.
+4. `records/emu-limits.md` 를 만들어 아래를 적습니다.
+   - `public` 리포를 만들려 했을 때 실제로 본 화면이나 메시지를 그대로
+   - 왜 막혔는지 (어떤 정책 때문인지)
+   - 엔터프라이즈 밖에서 시도했을 때 결과
+   - 이 제약 때문에 EMU 를 고르면 안 되는 조직은 어떤 조직인지 한 줄
+5. push 합니다.
 
-### ⌨️ Activity: (replace-me: Activity title)
+<details><summary>채점 기준</summary>
 
-1. (replace-me: First instruction)
-
-    (replace-me: Make sure to properly indent any multiline instructions)
-
-1. (replace-me: Second instruction)
-
-1. (replace-me: Additional instructions as needed)
-
-<details>
-<summary>Having trouble? 🤷</summary><br/>
-
-- (replace-me: Troubleshooting tip or hint)
-- (replace-me: Additional troubleshooting tips as needed)
-
+- `records/emu-limits.md` 가 있다
+- 그 안에 `public` 이 있다
+- 그 안에 `정책` 이 있다 (무엇 때문에 막혔는지 적었다는 뜻)
+- 그 안에 `밖` 이 있다 (엔터프라이즈 밖 활동을 다뤘다는 뜻)
 </details>
